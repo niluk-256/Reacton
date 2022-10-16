@@ -29,13 +29,13 @@ export default function Signup() {
   <div className="w-full md:w-[67%] ml-4 mr-4 lg:w-[40%] lg:mt-10" >
   <form >
     <div>
-    <input className="border-2 transition duration-500 placeholder-gray-400 focus:placeholder-transparent border-blue-400 w-full py-2  text-black-400 bg-transparent rounded-md focus:outline-none text-left md:p mb-4" type="text" id='name' value={name}onChange={onChange} placeholder="name"/>
+    <input className="border-2 transition duration-500 placeholder-gray-500 focus:placeholder-transparent border-blue-400 w-full py-2  text-black-400 bg-transparent rounded-md focus:outline-none text-left md:p mb-4" type="text" id='name' value={name}onChange={onChange} placeholder="name"/>
     </div>
     <div>
-    <input className="border-2 transition duration-500 placeholder-gray-400 focus:placeholder-transparent border-blue-400 w-full py-2  text-black-400 bg-transparent rounded-md focus:outline-none text-left md:p" type="email" id='email' value={email}onChange={onChange} placeholder="email address"/>
+    <input className="border-2 transition duration-500 placeholder-gray-500 focus:placeholder-transparent border-blue-400 w-full py-2  text-black-400 bg-transparent rounded-md focus:outline-none text-left md:p" type="email" id='email' value={email}onChange={onChange} placeholder="email address"/>
     </div>
     <div className= "relative mb-5">
-       <input className="mt-4 border-2 transition duration-500 placeholder-gray-400 focus:placeholder-transparent border-blue-400 w-full py-2  text-black-400 bg-transparent rounded-md focus:outline-none text-left md:p" type={showPassword ? "text": "password"} id='password' value={password}onChange={onChange} placeholder="Password"/>
+       <input className="mt-4 border-2 transition duration-500 placeholder-gray-500 focus:placeholder-transparent border-blue-400 w-full py-2  text-black-400 bg-transparent rounded-md focus:outline-none text-left md:p" type={showPassword ? "text": "password"} id='password' value={password}onChange={onChange} placeholder="Password"/>
       {  showPassword? 
       <AiFillEyeInvisible className= "absolute right-3 top-7 cursor-pointer" onClick={()=>setShowpassword((prevState)=>!prevState)} /> : 
       <AiFillEye className="absolute right-3 top-7 cursor-pointer" onClick={()=>setShowpassword((prevState)=>!prevState)} /> }
