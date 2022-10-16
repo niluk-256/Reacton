@@ -2,6 +2,11 @@ import React, { useState } from 'react'
 import {AiFillEyeInvisible , AiFillEye} from "react-icons/ai"
 import { Link } from 'react-router-dom'
 import {OAutho} from '../components/OAuth'
+import {getAuth , createUserWithEmailAndPassword ,updateProfile } from "firebase/auth"
+import  {db} from "../firebase"
+import { serverTimestamp, setDoc , doc } from 'firebase/firestore'
+import { useNavigate } from 'react-router-dom'
+
 
 
 export default function Signup() {
@@ -11,13 +16,34 @@ export default function Signup() {
     email:"",
     password: ""
   })
+ 
   const {name, email , password} = formData
+  const navigate = useNavigate()
   function onChange(e){
    console.log(e.target.value)
    setFormData((prevState)=>({
     ...prevState,
     [e.target.id]: e.target.value
    }))
+  }
+ async  function onsubmit(e){
+e.preventDefault()
+try {
+  const auth  =getAuth()
+  const userCredentials = await  createUserWithEmailAndPassword(auth , email , password)
+   updateProfile(auth.currentUser,{
+    displayName: name
+  })
+   const user = userCredentials.user
+   const formdatacopy = {...formData}
+   delete formdatacopy.password
+   formdatacopy.timestamp = serverTimestamp()
+ await setDoc(doc(db,"users" , user.uid) , formdatacopy)
+navigate("/")
+
+} catch (error) {
+  console.log(error)
+}
   }
   return (
    <section >
@@ -27,7 +53,8 @@ export default function Signup() {
     <img className="  w-50% rounded-lg"  src="https://img.freepik.com/premium-vector/online-registration-sign-up-with-man-sitting-near-smartphone_268404-95.jpg?w=2000" alt="" />
   </div>
   <div className="w-full md:w-[67%] ml-4 mr-4 lg:w-[40%] lg:mt-10" >
-  <form >
+    {/* form */}
+  <form onSubmit={onsubmit}>
     <div>
     <input className="border-2 transition duration-500 placeholder-gray-500 focus:placeholder-transparent border-blue-400 w-full py-2  text-black-400 bg-transparent rounded-md focus:outline-none text-left md:p mb-4" type="text" id='name' value={name}onChange={onChange} placeholder="name"/>
     </div>
