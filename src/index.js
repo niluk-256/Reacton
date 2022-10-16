@@ -1,6 +1,6 @@
 import React from "react"
 import ReactDom from "react-dom"
-import styles from "./style.css"
+import "./style.css"
 import { App } from "./App"
 
 function index() {
