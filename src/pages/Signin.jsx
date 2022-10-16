@@ -38,10 +38,10 @@ export default function Signin() {
     </div>
     <div className="flex justify-between whitespace-nowrap text-md sm:text-lg">
       <p className="mb-4">Don't have a account?
-        <Link to={"./signup"} className="text-red-500 hover:text-red-800"> Register</Link>
+        <Link to={"../signup"} className="text-red-500 hover:text-red-800"> Register</Link>
       </p>
       <p>
-        <Link to={"./forgotpaswd"} className="text-blue-500 hover:text-blue-700">Forgot Password ?</Link>
+        <Link to={"../forgotpaswd"} className="text-blue-500 hover:text-blue-700">Forgot Password ?</Link>
       </p>
     </div>
     <button className="w-full bg-blue-600 text-white px-7 py-3 rounded-lg shadow-md
