@@ -14,7 +14,6 @@ export function OAutho() {
       const provider = new GoogleAuthProvider()
       const result = await signInWithPopup(auth, provider)
       const user = result.user
-      console.log(user)
       const docref = doc(db, "users", user.uid)
       const docsnap = await getDoc(docref)
       if (!docsnap.exists()) {
