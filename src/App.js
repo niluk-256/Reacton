@@ -7,20 +7,26 @@ import Signup from "./pages/Signup"
 import Header from "./components/Header"
 import { ToastContainer } from "react-toastify"
 import "react-toastify/dist/ReactToastify.css"
+import { PrivateRoute } from "./components/privateRoute"
+import About from "./pages/About"
 
 function App() {
   return (
     <div>
-      <Router>
-        <Header />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/profile" element={<Profile />} />
-          <Route path="/signin" element={<Signin />} />
-          <Route path="/signup" element={<Signup />} />
-          <Route path="/forgotpaswd" element={<Forgotpaswd />} />
-        </Routes>
-      </Router>
+      <div>
+        <Router>
+          <Header />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/profile" element={<PrivateRoute />} />
+            <Route path="/profile" element={<Profile />} />
+            <Route path="/signin" element={<Signin />} />
+            <Route path="/signup" element={<Signup />} />
+            <Route path="/forgotpaswd" element={<Forgotpaswd />} />
+            <Route path="/about" element={<About />} />
+          </Routes>
+        </Router>
+      </div>
       <ToastContainer
         position="top-right"
         autoClose={5000}
@@ -33,7 +39,6 @@ function App() {
         pauseOnHover
         theme="light"
       />
-      {/* Same as */}
       <ToastContainer />
     </div>
   )
