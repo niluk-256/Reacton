@@ -1,18 +1,19 @@
 import React from "react"
 import { FcGoogle } from "react-icons/fc"
 import { toast } from "react-toastify"
-import { getAuth, GoogleAuthProvider, signInWithPopup } from "firebase/auth"
+import { getAuth, GoogleAuthProvider, signInWithRedirect } from "firebase/auth"
 import { db } from "../firebase"
 import { doc, getDoc, serverTimestamp, setDoc } from "firebase/firestore"
 import { useNavigate } from "react-router-dom"
 
 export function OAutho() {
   const navigate = useNavigate()
+
   async function onGoogleclick() {
     try {
       const auth = getAuth()
       const provider = new GoogleAuthProvider()
-      const result = await signInWithPopup(auth, provider)
+      const result = await signInWithRedirect(auth, provider)
       const user = result.user
       const docref = doc(db, "users", user.uid)
       const docsnap = await getDoc(docref)
