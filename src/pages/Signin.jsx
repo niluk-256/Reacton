@@ -15,6 +15,7 @@ export default function Signin() {
   })
   const { email, password } = formData
   function onChange(e) {
+    // e.preventDefault()
     // console.log(e.target.value)
     setFormData((prevState) => ({
       ...prevState,
@@ -50,7 +51,7 @@ export default function Signin() {
           />
         </div>
         <div className="w-full md:w-[67%] ml-4 mr-4 lg:w-[40%] lg:mt-10">
-          <form>
+          <form onSubmit={onclickSubmit}>
             <div>
               <input
                 className="border-2 transition duration-500 placeholder-gray-500 focus:placeholder-transparent border-blue-400 w-full py-2  text-black-400 bg-transparent rounded-md focus:outline-none text-left md:p"
