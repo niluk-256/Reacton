@@ -6,12 +6,12 @@ import { getFirestore } from "firebase/firestore"
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-    apiKey: "AIzaSyDQEbDClJCvxoJsETBZCnJNtIjs8vDDTFY",
-    authDomain: "reactoapp-e629e.firebaseapp.com",
-    projectId: "reactoapp-e629e",
-    storageBucket: "reactoapp-e629e.appspot.com",
-    messagingSenderId: "560774623149",
-    appId: "1:560774623149:web:7c17465111292dcec2bb24",
+  apiKey: "AIzaSyDQEbDClJCvxoJsETBZCnJNtIjs8vDDTFY",
+  authDomain: "reactoapp-e629e.firebaseapp.com",
+  projectId: "reactoapp-e629e",
+  storageBucket: "reactoapp-e629e.appspot.com",
+  messagingSenderId: "560774623149",
+  appId: "1:560774623149:web:7c17465111292dcec2bb24",
 }
 
 // Initialize Firebase

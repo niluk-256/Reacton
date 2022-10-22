@@ -1,0 +1,135 @@
+[debug] [2022-10-22T10:36:58.442Z] ----------------------------------------------------------------------
+[debug] [2022-10-22T10:36:58.445Z] Command:       /home/niluk/.nvm/versions/node/v16.14.2/bin/node /home/niluk/.nvm/versions/node/v16.14.2/bin/firebase init
+[debug] [2022-10-22T10:36:58.446Z] CLI Version:   11.15.0
+[debug] [2022-10-22T10:36:58.446Z] Platform:      linux
+[debug] [2022-10-22T10:36:58.446Z] Node Version:  v16.14.2
+[debug] [2022-10-22T10:36:58.447Z] Time:          Sat Oct 22 2022 16:06:58 GMT+0530 (India Standard Time)
+[debug] [2022-10-22T10:36:58.447Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-10-22T10:36:58.455Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-10-22T10:36:58.455Z] > authorizing via signed-in user (neluka2016@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /home/niluk/reactApp/myapp
+
+[debug] [2022-10-22T10:37:08.097Z] Error: Timed out.
+    at Timeout._onTimeout (/home/niluk/.nvm/versions/node/v16.14.2/lib/node_modules/firebase-tools/lib/utils.js:253:49)
+    at listOnTimeout (node:internal/timers:559:17)
+    at processTimers (node:internal/timers:502:7)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2022-10-22T10:39:24.187Z] ----------------------------------------------------------------------
+[debug] [2022-10-22T10:39:24.189Z] Command:       /home/niluk/.nvm/versions/node/v16.14.2/bin/node /home/niluk/.nvm/versions/node/v16.14.2/bin/firebase init
+[debug] [2022-10-22T10:39:24.189Z] CLI Version:   11.15.0
+[debug] [2022-10-22T10:39:24.189Z] Platform:      linux
+[debug] [2022-10-22T10:39:24.190Z] Node Version:  v16.14.2
+[debug] [2022-10-22T10:39:24.190Z] Time:          Sat Oct 22 2022 16:09:24 GMT+0530 (India Standard Time)
+[debug] [2022-10-22T10:39:24.190Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-10-22T10:39:24.197Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-10-22T10:39:24.198Z] > authorizing via signed-in user (neluka2016@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /home/niluk/reactApp/myapp
+
+[debug] [2022-10-22T10:39:38.712Z] Error: Timed out.
+    at Timeout._onTimeout (/home/niluk/.nvm/versions/node/v16.14.2/lib/node_modules/firebase-tools/lib/utils.js:253:49)
+    at listOnTimeout (node:internal/timers:559:17)
+    at processTimers (node:internal/timers:502:7)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2022-10-22T10:40:37.056Z] ----------------------------------------------------------------------
+[debug] [2022-10-22T10:40:37.058Z] Command:       /home/niluk/.nvm/versions/node/v16.14.2/bin/node /home/niluk/.nvm/versions/node/v16.14.2/bin/firebase init
+[debug] [2022-10-22T10:40:37.058Z] CLI Version:   11.15.0
+[debug] [2022-10-22T10:40:37.058Z] Platform:      linux
+[debug] [2022-10-22T10:40:37.058Z] Node Version:  v16.14.2
+[debug] [2022-10-22T10:40:37.059Z] Time:          Sat Oct 22 2022 16:10:37 GMT+0530 (India Standard Time)
+[debug] [2022-10-22T10:40:37.059Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-10-22T10:40:37.066Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-10-22T10:40:37.067Z] > authorizing via signed-in user (neluka2016@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /home/niluk/reactApp/myapp
+
+[debug] [2022-10-22T10:40:45.888Z] Error: Timed out.
+    at Timeout._onTimeout (/home/niluk/.nvm/versions/node/v16.14.2/lib/node_modules/firebase-tools/lib/utils.js:253:49)
+    at listOnTimeout (node:internal/timers:559:17)
+    at processTimers (node:internal/timers:502:7)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2022-10-22T10:42:19.662Z] ----------------------------------------------------------------------
+[debug] [2022-10-22T10:42:19.664Z] Command:       /home/niluk/.nvm/versions/node/v16.14.2/bin/node /home/niluk/.nvm/versions/node/v16.14.2/bin/firebase init
+[debug] [2022-10-22T10:42:19.664Z] CLI Version:   11.15.0
+[debug] [2022-10-22T10:42:19.664Z] Platform:      linux
+[debug] [2022-10-22T10:42:19.665Z] Node Version:  v16.14.2
+[debug] [2022-10-22T10:42:19.665Z] Time:          Sat Oct 22 2022 16:12:19 GMT+0530 (India Standard Time)
+[debug] [2022-10-22T10:42:19.665Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-10-22T10:42:19.672Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-10-22T10:42:19.673Z] > authorizing via signed-in user (neluka2016@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /home/niluk/reactApp/myapp
+
+[debug] [2022-10-22T10:42:29.357Z] Error: Timed out.
+    at Timeout._onTimeout (/home/niluk/.nvm/versions/node/v16.14.2/lib/node_modules/firebase-tools/lib/utils.js:253:49)
+    at listOnTimeout (node:internal/timers:559:17)
+    at processTimers (node:internal/timers:502:7)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2022-10-22T10:42:36.743Z] ----------------------------------------------------------------------
+[debug] [2022-10-22T10:42:36.744Z] Command:       /home/niluk/.nvm/versions/node/v16.14.2/bin/node /home/niluk/.nvm/versions/node/v16.14.2/bin/firebase init
+[debug] [2022-10-22T10:42:36.745Z] CLI Version:   11.15.0
+[debug] [2022-10-22T10:42:36.745Z] Platform:      linux
+[debug] [2022-10-22T10:42:36.745Z] Node Version:  v16.14.2
+[debug] [2022-10-22T10:42:36.746Z] Time:          Sat Oct 22 2022 16:12:36 GMT+0530 (India Standard Time)
+[debug] [2022-10-22T10:42:36.746Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-10-22T10:42:36.753Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-10-22T10:42:36.753Z] > authorizing via signed-in user (neluka2016@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /home/niluk/reactApp/myapp
+
+[debug] [2022-10-22T10:42:43.781Z] Error: Timed out.
+    at Timeout._onTimeout (/home/niluk/.nvm/versions/node/v16.14.2/lib/node_modules/firebase-tools/lib/utils.js:253:49)
+    at listOnTimeout (node:internal/timers:559:17)
+    at processTimers (node:internal/timers:502:7)
+[error] 
+[error] Error: An unexpected error has occurred.
