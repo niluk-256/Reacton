@@ -11,7 +11,7 @@ export default function Profile() {
   const navigate = useNavigate()
   const auth = getAuth()
   const [formData, setformData] = useState({
-    img: auth.currentUser.photoURL,
+    // img: auth.currentUser.photoURL,
     name: auth.currentUser.displayName,
     email: auth.currentUser.email,
   })
@@ -54,7 +54,6 @@ export default function Profile() {
         <div className="w-full md:[50%] mt-6 px-3">
           <form action="">
             {/* img */}
-            <img src={img} alt="dp" />
 
             {/* name */}
             <input

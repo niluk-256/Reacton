@@ -21,7 +21,7 @@ export function OAutho() {
         await setDoc(docref, {
           name: user.displayName,
           email: user.email,
-          img: user.photoURL,
+          // img: user.photoURL,
           timestamp: serverTimestamp(),
         })
         toast.success("Login Successful!")
