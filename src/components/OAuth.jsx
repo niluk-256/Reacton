@@ -20,11 +20,12 @@ export function OAutho() {
         await setDoc(docref, {
           name: user.displayName,
           email: user.email,
+          img: user.photoURL,
           timestamp: serverTimestamp(),
         })
+        toast.success("Login Successful!")
+        navigate("/")
       }
-      toast.success("Login Successful!")
-      navigate("/")
     } catch (error) {
       toast.error("could not authorize with google")
     }

@@ -11,12 +11,14 @@ export default function Profile() {
   const navigate = useNavigate()
   const auth = getAuth()
   const [formData, setformData] = useState({
+    img: auth.currentUser.photoURL,
     name: auth.currentUser.displayName,
     email: auth.currentUser.email,
   })
   const [changeDetaiks, setDetails] = useState(false)
 
-  const { name, email } = formData
+  const { name, email, img } = formData
+  console.log(img)
   function onLogout() {
     auth.signOut()
     navigate("/")
@@ -51,6 +53,9 @@ export default function Profile() {
         <h1 className="text-3xl text-center m-6 font-bold"> Profile</h1>
         <div className="w-full md:[50%] mt-6 px-3">
           <form action="">
+            {/* img */}
+            <img src={img} alt="dp" />
+
             {/* name */}
             <input
               type="text"
