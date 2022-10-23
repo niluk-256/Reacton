@@ -1,11 +1,15 @@
 import React from "react"
 import shareVideo from "../assets/logo.mp4"
+import metaVideo from "../assets/metamask-icon.svg"
 export default function Home() {
   return (
     <div>
       <div>
-        <div className="mt-4 flex justify-center text-3xl mb-5 border-gray-500 font-semibold ">
+        <div className="ml-10 mr-11 mt-4 flex justify-between text-3xl mb-5 border-gray-500 font-semibold ">
           Home
+          <button className="flex bg-slate-500 rounded-lg p-1 text-2xl font-sans text-gray-50 hover:bg-slate-900">
+            <img className="w-10 mr-1" src={metaVideo} alt="" /> Connect
+          </button>
         </div>
         <div className="flex justify-center items-center flex-col  h-screen">
           <div className="relative w-full h-full">
