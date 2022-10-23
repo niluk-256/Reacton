@@ -38,7 +38,7 @@ export default function Header() {
             className="bg-green-300 px-5 cursor-pointer"
             onClick={() => navigate("/")}
           >
-            LOGO
+            0xNiluk
           </h1>
         </div>
         <div>
