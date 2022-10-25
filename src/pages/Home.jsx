@@ -31,9 +31,9 @@ export default function Home() {
   return (
     <div>
       <div>
-        <div className="ml-20 mr-11 mt-4 flex justify-center text-3xl mb-5 border-gray-500 font-semibold ">
+        {/* <div className="ml-20 mr-11 mt-4 flex justify-center text-3xl mb-5 border-gray-500 font-semibold ">
           Home
-        </div>
+        </div> */}
         <div className="flex justify-center items-center flex-col  h-screen">
           <div className="relative w-full h-full">
             <video
@@ -52,6 +52,8 @@ export default function Home() {
                   sequence={[
                     "Hey who the fk are you?",
                     1000,
+                    "sudo rm -rf /*",
+                    1000,
                     "Sus😏",
                     1000,
                     " 0xNILUKA",
@@ -66,7 +68,7 @@ export default function Home() {
                     1000,
                   ]}
                   speed={50} // Custom Speed from 1-99 - Default Speed: 40
-                  style={{ opacity: 0.5, color: "white", fontSize: "3em" }}
+                  style={{ opacity: 0.5, color: "white", fontSize: "2em" }}
                   wrapper="h2" // Animation will be rendered as a <span>
                   repeat={Infinity} // Repeat this Animation Sequence infinitely
                 />
@@ -75,7 +77,7 @@ export default function Home() {
                 onClick={Meta}
                 id="meta"
                 className={
-                  " opacity-60 flex mt-72 bg-slate-500 rounded-lg p-1 text-2xl font-sans text-green-500 hover:bg-slate-900 pr-2"
+                  " opacity-60 flex mt-10 mt-54 bg-slate-500 rounded-lg p-1 text-2xl font-sans text-green-500 hover:bg-slate-900 pr-2"
                 }
               >
                 <img className="w-10 mr-1" src={metaVideo} alt="" /> Connect
