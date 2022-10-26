@@ -3,6 +3,7 @@ import shareVideo from "../assets/logo.mp4"
 import metaVideo from "../assets/metamask-icon.svg"
 import { ethers } from "ethers"
 import { TypeAnimation } from "react-type-animation"
+import { ConnectButton } from "@rainbow-me/rainbowkit"
 
 import { abi, contractAddress } from "../constants"
 // import Meta from "../metaconnect"
@@ -80,15 +81,27 @@ export default function Home() {
                   repeat={Infinity} // Repeat this Animation Sequence infinitely
                 />
               </div>
-              <button
-                onClick={Meta}
-                id="meta"
-                className={
-                  " opacity-60 flex mt-10 mt-54 bg-slate-500 rounded-lg p-1 text-2xl font-sans text-green-500 hover:bg-slate-900 pr-2"
-                }
-              >
-                <img className="w-10 mr-1" src={metaVideo} alt="" /> Connect
-              </button>
+              <div className="mt-20 flex-wrap flex">
+                <img className="opacity-60 w-10 mr-1" src={metaVideo} alt="" />
+                <ConnectButton className="mb-6" />
+              </div>
+              <div className="mt-20">
+                <TypeAnimation
+                  // Same String at the start will only be typed once, initially
+                  sequence={[
+                    "0XNILUK ",
+                    5000,
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non venenatis nisl. Aliquam erat volutpat. Sed euismod erat ac ante varius, et pulvinar neque rhoncus. Suspendisse non diam lacus. Cras aliquam ipsum vitae orci lacinia pellentesque. Cras a gravida urna. Morbi at arcu massa. Mauris commodo, tellus ac elementum gravida, nulla ligula tincidunt erat, a dignissim nulla tortor eget purus",
+                    1000,
+                    "Nice",
+                    1000,
+                  ]}
+                  speed={10} // Custom Speed from 1-99 - Default Speed: 40
+                  style={{ opacity: 0.5, color: "white", fontSize: "1em" }}
+                  wrapper="h2" // Animation will be rendered as a <span>
+                  repeat={2} // Repeat this Animation Sequence infinitely
+                />
+              </div>
             </div>
           </div>
         </div>
