@@ -47,22 +47,23 @@ export default function Home() {
             <div className="absolute flex flex-col items-center top-0 right-0 left-0 bottom-0 bg-blackOverlay ">
               <div className="mt-20">
                 <TypeAnimation
+                  className="font-mono"
                   // Same String at the start will only be typed once, initially
                   sequence={[
-                    "Hey who the fk are you?",
+                    "Hey  you!",
                     1000,
                     "Hmm.. REKT! ?",
                     1000,
-                    "HCERINU RUGPULL!",
+                    " RUGPULL!",
                     1000,
                     "IMHO YOU GMI",
                     100,
-                    "I use Arch BTW🔺",
+                    "I use Arch BTW",
                     1000,
                     "Paradigm CTF🚩",
                     1000,
 
-                    " 0xNILUKA",
+                    " 0xNILUKA ",
                     1000,
                     "BUILD WEB3",
                     1000,
@@ -83,7 +84,7 @@ export default function Home() {
                 <img className="opacity-60 w-10 mr-1" src={metaVideo} alt="" />
                 <ConnectButton className="mb-6" />
               </div>
-              <div className="flex flex-col md:mt-20 md:ml-20  sm:mt-20 sm:ml-20 mt-10 ml-10">
+              <div className="flex flex-col md:mt-20 md:ml-20  sm:mt-20 sm:ml-20 mt-10 ml-5">
                 <Ascii />
               </div>
             </div>
