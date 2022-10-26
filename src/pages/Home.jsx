@@ -45,7 +45,7 @@ export default function Home() {
               className="w-full h-full object-cover"
             ></video>
             <div className="absolute flex flex-col items-center top-0 right-0 left-0 bottom-0 bg-blackOverlay ">
-              <div className="mt-40 ">
+              <div className="mt-20">
                 <TypeAnimation
                   // Same String at the start will only be typed once, initially
                   sequence={[
