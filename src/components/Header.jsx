@@ -31,11 +31,11 @@ export default function Header() {
     //------------------------
   }
   return (
-    <div className="bg-white border-b shadow-sm sticky top-0 z-50">
-      <header className="flex justify-between items-center px-3 max-w-6xl mx-auto">
+    <div className="shadow-lg sticky top-0 z-50 bg-slate-800 ">
+      <header className=" flex justify-between items-center px-3 max-w-6xl mx-auto ">
         <div>
           <h1
-            className="bg-green-300 px-5 cursor-pointer"
+            className=" bg-sky-300 px-5 cursor-pointer hover:border-b-sky-700 font-semibold "
             onClick={() => navigate("/")}
           >
             0xNiluk
@@ -46,24 +46,24 @@ export default function Header() {
             <li
               onClick={() => navigate("/")}
               className={` cursor-pointer  py-3 font-semibold text-gray-400 border-b-[3px] border-b-transparent 
-        ${pathMathRoute("/") && "text-black border-b-green-500"}`}
+        ${pathMathRoute("/") && "text-gray-400 border-b-sky-500"}`}
             >
               Home
             </li>
             <li
               onClick={() => navigate("/profile")}
-              className={` cursor-pointer  py-3 font-semibold text-gray-400 border-b-[3px] border-b-transparent 
+              className={` cursor-pointer  py-3 font-semibold text-gray-600 border-b-[3px] border-b-transparent 
         ${
           pathMathRoute("/signin") ||
-          (pathMathRoute("/profile") && "text-black border-b-green-500")
+          (pathMathRoute("/profile") && "text-gray-400 border-b-sky-500")
         } `}
             >
               {pagestate}
             </li>
             <li
               onClick={() => navigate("/about")}
-              className={` cursor-pointer  py-3 font-semibold text-gray-400 border-b-[3px] border-b-transparent 
-        ${pathMathRoute("/about") && "text-black border-b-green-500"}`}
+              className={` cursor-pointer  py-3 font-semibold text-gray-600 border-b-[3px] border-b-transparent 
+        ${pathMathRoute("/about") && "text-gray-400 border-b-sky-500"}`}
             >
               About
             </li>

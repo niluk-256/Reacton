@@ -4,6 +4,7 @@ import metaVideo from "../assets/metamask-icon.svg"
 import { ethers } from "ethers"
 import { TypeAnimation } from "react-type-animation"
 import { ConnectButton } from "@rainbow-me/rainbowkit"
+import { Ascii } from "./Ascii"
 
 import { abi, contractAddress } from "../constants"
 // import Meta from "../metaconnect"
@@ -32,10 +33,7 @@ export default function Home() {
   return (
     <div>
       <div>
-        {/* <div className="ml-20 mr-11 mt-4 flex justify-center text-3xl mb-5 border-gray-500 font-semibold ">
-          Home
-        </div> */}
-        <div className="flex justify-center items-center flex-col  h-screen">
+        <div className="flex justify-center items-center flex-wrap  h-screen">
           <div className="relative w-full h-full">
             <video
               src={shareVideo}
@@ -85,22 +83,8 @@ export default function Home() {
                 <img className="opacity-60 w-10 mr-1" src={metaVideo} alt="" />
                 <ConnectButton className="mb-6" />
               </div>
-              <div className="mt-20">
-                <TypeAnimation
-                  // Same String at the start will only be typed once, initially
-                  sequence={[
-                    "0XNILUK ",
-                    5000,
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non venenatis nisl. Aliquam erat volutpat. Sed euismod erat ac ante varius, et pulvinar neque rhoncus. Suspendisse non diam lacus. Cras aliquam ipsum vitae orci lacinia pellentesque. Cras a gravida urna. Morbi at arcu massa. Mauris commodo, tellus ac elementum gravida, nulla ligula tincidunt erat, a dignissim nulla tortor eget purus",
-                    1000,
-                    "Nice",
-                    1000,
-                  ]}
-                  speed={10} // Custom Speed from 1-99 - Default Speed: 40
-                  style={{ opacity: 0.5, color: "white", fontSize: "1em" }}
-                  wrapper="h2" // Animation will be rendered as a <span>
-                  repeat={2} // Repeat this Animation Sequence infinitely
-                />
+              <div className="flex flex-col md:mt-20 md:ml-20  sm:mt-20 sm:ml-20 mt-10 ml-10">
+                <Ascii />
               </div>
             </div>
           </div>
