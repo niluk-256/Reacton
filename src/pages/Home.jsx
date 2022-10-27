@@ -89,9 +89,6 @@ export default function Home() {
               </div>
             </div>
             {/* // */}
-            <div>
-              <h1>something</h1>
-            </div>
             {/* // */}
           </div>
         </div>
