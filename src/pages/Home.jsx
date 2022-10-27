@@ -44,7 +44,7 @@ export default function Home() {
               autoPlay
               className="w-full h-full object-cover"
             ></video>
-            <div className="absolute flex flex-col items-center top-0 right-0 left-0 bottom-0 bg-blackOverlay ">
+            <div className="absolute flex flex-col items-center top-0 right-0 left-0 bottom-full bg-black-overlay">
               <div className="mt-20">
                 <TypeAnimation
                   className="font-mono"
@@ -88,6 +88,11 @@ export default function Home() {
                 <Ascii />
               </div>
             </div>
+            {/* // */}
+            <div>
+              <h1>something</h1>
+            </div>
+            {/* // */}
           </div>
         </div>
       </div>
