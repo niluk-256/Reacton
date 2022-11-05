@@ -65,7 +65,7 @@ export default function Header() {
               className={` cursor-pointer  py-3 font-semibold text-gray-600 border-b-[3px] border-b-transparent 
         ${pathMathRoute("/about") && "text-gray-400 border-b-sky-500"}`}
             >
-              About
+              About Me
             </li>
           </ul>
         </div>
